@@ -3,7 +3,9 @@ import React, {useEffect, useState} from "react";
 const Counter = () => {
     const [count , setCount] = useState(0) ;
 
-    useEffect(() => {}, []);
+    useEffect(() => {
+        console.log("The use effect run");
+    }, [count]);
     
     return(
         <div>
